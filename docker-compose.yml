@@ -1,6 +1,24 @@
 version: '3.6'
 
 services: 
+  # traefik:
+  #   image: traefik:latest
+  #   depends_on:
+  #     - elasticsearch
+  #     - logstash
+  #     - kibana
+  #     - apm-server
+  #   ports:
+  #     - "81:80"
+  #     - "8080:8080"
+  #   volumes:
+  #     - type: bind
+  #       source: /var/run/docker.sock
+  #       target: /var/run/docker.sock
+  #     - type: bind
+  #       source: ./traefik/config/traefik.yml
+  #       target: /etc/traefik/traefik.yml
+      
   elasticsearch:
     container_name: core_elasticsearch
     build:

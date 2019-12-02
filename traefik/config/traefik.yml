@@ -1,0 +1,11 @@
+defaultEntryPoints:
+  - "http"
+  - "https"
+providers:
+  docker:
+    endpoint: "unix:///var/docker.sock"
+entryPoints:
+  entryPoints.http:
+    address: ":80"
+  entryPoints.https:
+    address: ":443"
